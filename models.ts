@@ -7,7 +7,7 @@ export interface User {
     phoneNumber?: string;
     festivals: FestivalUser[];
     status: "unverified" | "verified";
-    male: boolean;
+    gender: boolean;
 }
 
 export interface FestivalUser {
