@@ -37,3 +37,10 @@ export interface QRCode {
     user: User;
     festival: Festival;
 }
+
+export interface Response<T> {
+    status: number;
+    message: string;
+    data: T;
+    errors?: { code: number; message: string; debug?: string }[];
+}
