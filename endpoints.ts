@@ -56,3 +56,10 @@ export type UpdateFestivalRequest = {
 };
 
 export type UpdateFestivalResponse = Response<Festival>;
+
+export type CreateFestivalRequest = {
+    name: string;
+    description?: string;
+    location?: string;
+};
+export type CreateFestivalResponse = Response<Festival>;
