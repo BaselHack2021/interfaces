@@ -5,12 +5,13 @@ export interface User {
     birthdate: Date;
     email: string;
     phoneNumber?: string;
-    festivals: FestivalUser[];
     status: "unverified" | "verified";
     gender: boolean;
 }
 
 export interface FestivalUser {
+    _id: string;
+    user: User;
     festival: Festival;
     balance: number;
     role: Role;
@@ -42,8 +43,7 @@ export interface Payment {
 
 export interface QRCode {
     _id: string;
-    user: User;
-    festival: Festival;
+    user: FestivalUser;
 }
 
 export interface Response<T> {
