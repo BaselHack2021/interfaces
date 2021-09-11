@@ -3,7 +3,10 @@
     "version": "1.0.0",
     "main": "index.js",
     "repository": "https://github.com/BaselHack2021/interfaces.git",
-    "author": "Michael Beutler <michael.beutler@iperka.com>",
     "license": "MIT",
-    "types": "./index.d.ts"
+    "types": "./index.d.ts",
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com"
+    },
+    "repository": "git://github.com/baselhack2021/interfaces.git"
 }
