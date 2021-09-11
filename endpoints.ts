@@ -7,6 +7,8 @@ export type RegisterUserRequest = {
     lastName: string;
     gender: boolean;
     birthdate: string;
+    email: string;
+    phoneNumber?: string;
 };
 export type RegisterUserResponse = Response<User>;
 
