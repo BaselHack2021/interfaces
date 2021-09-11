@@ -10,5 +10,6 @@
     "repository": "git://github.com/baselhack2021/interfaces.git",
     "scripts": {
         "publish": "npm publish --registry=https://npm.pkg.github.com/"
-    }
+    },
+    "typings": "index.d.ts"
 }

@@ -1,4 +1,4 @@
-import { PaymentStatus, Response, User } from "./models";
+import { Festival, PaymentStatus, Response, User } from "./models";
 
 export type GetAllUsersResponse = Response<User[]>;
 
@@ -22,7 +22,7 @@ export type UpdateUserRequest = {
     status?: boolean;
 };
 
-export type UpdateUserRequestResponse = Response<User>;
+export type UpdateUserResponse = Response<User>;
 
 export type GetUserByIdRequest = {
     id: string;
@@ -41,3 +41,18 @@ export type CreatePaymentResponse = Response<{
     message: string;
     status: PaymentStatus;
 }>;
+
+export type GetAllFestivalsResponse = Response<Festival[]>;
+
+export type GetFestivalByIdRequest = {
+    id: string;
+};
+export type GetFestivalByIdResponse = Response<Festival>;
+
+export type UpdateFestivalRequest = {
+    name: string;
+    description?: string;
+    location?: string;
+};
+
+export type UpdateFestivalResponse = Response<Festival>;
