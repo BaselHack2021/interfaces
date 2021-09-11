@@ -1,12 +1,14 @@
 {
-    "name": "interfaces",
+    "name": "@baselhack2021/interfaces",
     "version": "1.0.0",
     "main": "index.js",
-    "repository": "https://github.com/BaselHack2021/interfaces.git",
     "license": "MIT",
     "types": "./index.d.ts",
     "publishConfig": {
         "registry": "https://npm.pkg.github.com"
     },
-    "repository": "git://github.com/baselhack2021/interfaces.git"
+    "repository": "git://github.com/baselhack2021/interfaces.git",
+    "scripts": {
+        "publish": "npm publish --registry=https://npm.pkg.github.com/"
+    }
 }
