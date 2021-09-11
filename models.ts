@@ -11,7 +11,6 @@ export interface User {
 export interface FestivalUser {
     festival: Festival;
     balance: number;
-    payments: Payment[];
     role: Role;
     imageUrl?: string;
 }
@@ -30,6 +29,7 @@ export interface Payment {
     amount: number;
     description?: string;
     festival: Festival;
+    festivalUser: FestivalUser
 }
 
 export interface QRCode {
