@@ -16,7 +16,12 @@ export type UpdateUserRequest = {
     firstName?: string;
     lastName?: string;
     gender?: boolean;
+    birthdate?: string;
+    email?: string;
+    phoneNumber?: string;
+    verified?: Boolean;
 };
+
 export type UpdateUserRequestResponse = Response<User>;
 
 export type GetUserByIdRequest = {
