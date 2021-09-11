@@ -1,5 +1,5 @@
 export interface User {
-    uuid: string;
+    _id: string;
     firstName: string;
     lastName: string;
     birthdate: Date;
@@ -18,7 +18,7 @@ export interface FestivalUser {
 }
 
 export interface Festival {
-    uuid: string;
+    _id: string;
     name: string;
     description?: string;
     location?: string;
@@ -32,7 +32,7 @@ export type PaymentStatus =
     | "accepted";
 
 export interface Payment {
-    uuid: string;
+    _id: string;
     amount: number;
     description?: string;
     festival: Festival;
@@ -41,7 +41,7 @@ export interface Payment {
 }
 
 export interface QRCode {
-    uuid: string;
+    _id: string;
     user: User;
     festival: Festival;
 }
