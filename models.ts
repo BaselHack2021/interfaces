@@ -6,6 +6,7 @@ export interface User {
     email: string;
     phoneNumber?: string;
     festivals: FestivalUser[];
+    status: "unverified" | "verified";
 }
 
 export interface FestivalUser {
@@ -24,12 +25,18 @@ export interface Festival {
 
 export type Role = "visitor" | "employee" | "organisator";
 
+export type PaymentStatus =
+    | "insufficientBalance"
+    | "insufficientAge"
+    | "accepted";
+
 export interface Payment {
     uuid: string;
     amount: number;
     description?: string;
     festival: Festival;
-    festivalUser: FestivalUser
+    festivalUser: FestivalUser;
+    status: PaymentStatus;
 }
 
 export interface QRCode {
