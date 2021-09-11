@@ -19,7 +19,7 @@ export type UpdateUserRequest = {
     birthdate?: string;
     email?: string;
     phoneNumber?: string;
-    verified?: Boolean;
+    status?: boolean;
 };
 
 export type UpdateUserRequestResponse = Response<User>;
