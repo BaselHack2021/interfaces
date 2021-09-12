@@ -1,4 +1,4 @@
-import { Festival, PaymentStatus, Response, User } from "./models";
+import { Festival, PaymentStatus, QRCode, Response, User } from "./models";
 
 export type GetAllUsersResponse = Response<User[]>;
 
@@ -63,3 +63,16 @@ export type CreateFestivalRequest = {
     location?: string;
 };
 export type CreateFestivalResponse = Response<Festival>;
+
+export type GetAllQRCodesResponse = Response<QRCode[]>;
+
+export type GetQRCodeByIdRequest = {
+    id: string;
+};
+export type GetQRCodeByIdResponse = Response<QRCode>;
+
+export type LinkQRCodeRequest = {
+    qrcode: string;
+    festivalUserId: string;
+};
+export type LinkQRCodeResponse = Response<null>;
