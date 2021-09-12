@@ -1,6 +1,6 @@
 {
     "name": "@baselhack2021/interfaces",
-    "version": "1.0.8",
+    "version": "1.0.9",
     "main": "index.js",
     "license": "MIT",
     "types": "./index.d.ts",
