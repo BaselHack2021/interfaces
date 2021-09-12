@@ -54,7 +54,6 @@ export interface Response<T> {
         [param: string]: {
             message: string;
             debug?: string;
-            value: string | number | boolean;
         };
     };
     version: string;

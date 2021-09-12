@@ -1,6 +1,6 @@
 {
     "name": "@baselhack2021/interfaces",
-    "version": "1.0.6",
+    "version": "1.0.8",
     "main": "index.js",
     "license": "MIT",
     "types": "./index.d.ts",
@@ -8,6 +8,5 @@
     "publishConfig": {
         "registry": "https://registry.npmjs.org"
     },
-    "repository": "git://github.com/baselhack2021/interfaces.git",
     "typings": "index.d.ts"
 }
