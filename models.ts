@@ -49,6 +49,13 @@ export interface QRCode {
 export interface Response<T> {
     status: number;
     message: string;
-    data: T;
-    errors?: { code: number; message: string; debug?: string }[];
+    data: T | null;
+    errors?: {
+        [param: string]: {
+            message: string;
+            debug?: string;
+            value: string | number | boolean;
+        };
+    };
+    version: string;
 }
